@@ -1,0 +1,117 @@
+body{
+display: grid;
+    background-color:blueviolet;
+    grid-template-columns: 1fr 1fr;
+   grid-template-areas:  "hd hd"
+   "ma ma"
+            "se ar "
+            "se ar"
+       "si si"
+    "fot fot";
+column-gap: 5px;
+    column-gap: 5px;
+    font-family: cursive;
+    
+}
+img {
+  max-height: 70vw;
+    display: flex;
+    width: auto;
+    margin-right: 25px;
+}
+
+header{
+    display: flex;
+    grid-area: hd;
+   border: 2px solid skyblue;
+    background-color: skyblue;
+}
+main {
+    display: grid;
+    grid-area: ma;
+    text-align: center;
+    border: 2px solid black;
+    padding: 0vw;
+}
+main img{
+    height: 40vw;
+    width: 60vw;
+}
+main h2{
+    font-size: 5vw;
+    text-decoration: underline;
+    padding: 0vw;
+    margin: 0vw;
+}
+
+
+section{
+    display: grid;
+    grid-area: se;
+    
+}
+
+article{
+    display: grid;
+    grid-area: ar;
+        
+}
+footer{
+    display: grid;
+    grid-area: fot;
+    background-color:deepskyblue;
+    height: 10vw;
+    
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+p{
+    text-align: center;
+font-size:4vw;
+    animation: link 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: red;
+    font-family:cursive;
+margin: 0vw;
+}
+p:hover{
+    animation-play-state: paused;
+    transform: scale(1.2);
+}
+@keyframes link{
+    100%{
+        transform: scale(1.5);
+    }
+}
+main nav img{
+ 
+
+       margin-left: auto;
+    margin-right: auto;
+}
+main nav h2{
+    text-align: left;
+    margin-left: 5px;
+ 
+}
+aside{
+    grid-area: si;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 599px){
+    body { 
+        display: grid;
+      grid-template-columns: 1fr;
+   grid-template-areas:  "hd"
+   "ma"
+            "se "
+            "ar"
+       "si"
+    "fot";
+    }}
